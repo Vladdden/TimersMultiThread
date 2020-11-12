@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
+  },
+  "projects": {
+    "/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "packagesPath": "/home/vladdden/.nuget/packages/",
+        "outputPath": "/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vladdden/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

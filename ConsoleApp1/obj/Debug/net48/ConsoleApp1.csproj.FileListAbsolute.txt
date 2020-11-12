@@ -1,0 +1,9 @@
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/bin/Debug/net48/ConsoleApp1.exe.config
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/bin/Debug/net48/ConsoleApp1.exe
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/bin/Debug/net48/ConsoleApp1.pdb
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net48/ConsoleApp1.csprojAssemblyReference.cache
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net48/ConsoleApp1.AssemblyInfoInputs.cache
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net48/ConsoleApp1.AssemblyInfo.cs
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net48/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net48/ConsoleApp1.exe
+/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/obj/Debug/net48/ConsoleApp1.pdb
