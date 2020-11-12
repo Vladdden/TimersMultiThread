@@ -34,7 +34,11 @@ namespace ConsoleApp1
         static async void Logging(TimerInfo info)
         {
             string writePath = @"C:\SomeDir\hta2.txt";
-
+            
+            Console.WriteLine(DateTime.Now.Ticks + ": Таймер " + Thread.CurrentThread.Name + " - запустился ");
+            Console.WriteLine(DateTime.Now.Ticks + ": Таймер " + Thread.CurrentThread.Name + " - завершился ");
+            Console.WriteLine("Потрачено тактов на выполнение: " + stopwatch.ElapsedTicks);
+            
             string text = "Привет мир!\nПока мир...";
             try
             {
@@ -56,15 +60,34 @@ namespace ConsoleApp1
         
         static void System_Timers_Timer(object secVal)
         {
-            Stopwatch stopwatch = new Stopwatch();  // Запускаем внутренний таймер объекта Stopwatch
-            stopwatch.Start();
-            Console.WriteLine(DateTime.Now.Ticks + ": Таймер " + Thread.CurrentThread.Name + " - запустился ");
+            string name = Thread.CurrentThread.Name; 
+            DateTime start;
+            DateTime end;
+            long difference;
+            Exception timerException = null;
             
-            Thread.Sleep(100);
+            try
+            {
+                Stopwatch stopwatch = new Stopwatch();  // Запускаем внутренний таймер объекта Stopwatch
+                stopwatch.Start();
+                start = DateTime.Now;
+                
             
-            stopwatch.Stop(); // Останавливаем внутренний таймер объекта Stopwatch
-            Console.WriteLine(DateTime.Now.Ticks + ": Таймер " + Thread.CurrentThread.Name + " - завершился ");
-            Console.WriteLine("Потрачено тактов на выполнение: " + stopwatch.ElapsedTicks);
+                Thread.Sleep(100);
+            
+                stopwatch.Stop(); // Останавливаем внутренний таймер объекта Stopwatch
+                difference = stopwatch.ElapsedTicks;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(Thread.CurrentThread.Name + ":" + e);
+                timerException = e;
+            }
+            finally
+            {
+                TimerInfo timer = new TimerInfo(Thread.CurrentThread.Name, start, end, difference, timerException);
+                Logging(timer);
+            }
         }
         
         static void System_Threading_Timer(object secVal)
@@ -89,14 +112,18 @@ namespace ConsoleApp1
     {
         public string name;
         public DateTime start;
+        public long startTicks;
         public DateTime end;
+        public long endTicks;
         public long difference;
         public Exception timerException;
-        public TimerInfo(string Name, DateTime Start, DateTime End, long Difference, Exception TimerException)
+        public TimerInfo(string Name, DateTime Start, long StartTicks, DateTime End, long EndTicks, long Difference, Exception TimerException)
         {
             name = Name;
             start = Start;
+            startTicks = StartTicks;
             end = End;
+            endTicks = EndTicks;
             difference = Difference;
             timerException = TimerException;
         }

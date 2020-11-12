@@ -4,13 +4,9 @@
     <projectFile>ConsoleApp1/ConsoleApp1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972d2ee7-9d47-48f2-8f30-2c968721543b" name="Default Changelist" comment="Initial commit">
+    <list default="true" id="972d2ee7-9d47-48f2-8f30-2c968721543b" name="Default Changelist" comment="Добавил класс, описывающий таймер, начал писать функцию ведения лога">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net48/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net48/ConsoleApp1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net48/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net48/ConsoleApp1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net48/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net48/ConsoleApp1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net48/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/net48/ConsoleApp1.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605188484455</updated>
-      <workItem from="1605188489515" duration="6640000" />
+      <workItem from="1605188489515" duration="8053000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1605193116686</created>
@@ -76,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605193116687</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Добавил класс, описывающий таймер, начал писать функцию ведения лога">
+      <created>1605195730523</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605195730523</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,7 +90,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Добавил класс, описывающий таймер, начал писать функцию ведения лога" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил класс, описывающий таймер, начал писать функцию ведения лога" />
   </component>
   <component name="WindowStateProjectService">
     <state x="822" y="441" width="314" height="207" key="Github.ShareDialog" timestamp="1605192735570">
@@ -98,25 +102,25 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="724" y="241" width="533" height="632" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605192746843" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1605194362328">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1605195745615">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605194362328" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1605194362328">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605195745615" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1605195745613">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605194362328" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1605194362328">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605195745613" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1605195745612">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605194362328" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1605194362328">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605195745612" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1605195745614">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605194362328" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605193157562">
+    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605195745614" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605195739778">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1605193157562" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1605195739778" />
   </component>
 </project>
