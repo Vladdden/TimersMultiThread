@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
     class Program
-    {
+    { 
+        
         static void Main(string[] args)
         {
             int timeInSec = 0;
@@ -28,56 +31,74 @@ namespace ConsoleApp1
             
         }
 
-        static void Logging()
+        static async void Logging(TimerInfo info)
         {
-            
-        }
-        
-        static void System_Timers_Timer(int secVal)
-        {
-            
-        }
-        
-        static void System_Threading_Timer(int secVal)
-        {
-            
-        }
-        
-        static void System_Windows_Forms_Timer(int secVal)
-        {
-            
-        }
-        
-        static void System_Windows_Threading_DispatcherTimer(int secVal)
-        {
-            
-        }
-        
-        
-        class TimerThread 
-        {
-            Thread thread;
+            string writePath = @"C:\SomeDir\hta2.txt";
 
-            public TimerThread(string name, int timeInSec) //Конструктор получает имя функции и номер до кторого ведется счет
+            string text = "Привет мир!\nПока мир...";
+            try
             {
-
-                thread = new Thread(this.func);
-                thread.Name = name;
-                thread.Start(timeInSec);//передача параметра в поток
-            }
-            
-            void func(object num)//Функция потока, передаем параметр
-            {
-                for (int i = 0;i < (int)num;i++ ) 
+                using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.Default))
                 {
-                    Console.WriteLine(Thread.CurrentThread.Name + " выводит " + i);
-                    Thread.Sleep(0);
+                    await sw.WriteLineAsync(text);
                 }
-                Console.WriteLine(Thread.CurrentThread.Name + " завершился");
+
+                using (StreamWriter sw = new StreamWriter(writePath, true, System.Text.Encoding.Default))
+                {
+                    await sw.WriteLineAsync(text);
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
         
+        static void System_Timers_Timer(object secVal)
+        {
+            Stopwatch stopwatch = new Stopwatch();  // Запускаем внутренний таймер объекта Stopwatch
+            stopwatch.Start();
+            Console.WriteLine(DateTime.Now.Ticks + ": Таймер " + Thread.CurrentThread.Name + " - запустился ");
+            
+            Thread.Sleep(100);
+            
+            stopwatch.Stop(); // Останавливаем внутренний таймер объекта Stopwatch
+            Console.WriteLine(DateTime.Now.Ticks + ": Таймер " + Thread.CurrentThread.Name + " - завершился ");
+            Console.WriteLine("Потрачено тактов на выполнение: " + stopwatch.ElapsedTicks);
+        }
         
-        }     
+        static void System_Threading_Timer(object secVal)
+        {
+            
+        }
         
+        static void System_Windows_Forms_Timer(object secVal)
+        {
+            
+        }
+        
+        static void System_Windows_Threading_DispatcherTimer(object secVal)
+        {
+            
+        }
+        
+
+    }
+
+    class TimerInfo
+    {
+        public string name;
+        public DateTime start;
+        public DateTime end;
+        public long difference;
+        public Exception timerException;
+        public TimerInfo(string Name, DateTime Start, DateTime End, long Difference, Exception TimerException)
+        {
+            name = Name;
+            start = Start;
+            end = End;
+            difference = Difference;
+            timerException = TimerException;
+        }
     }
 }
