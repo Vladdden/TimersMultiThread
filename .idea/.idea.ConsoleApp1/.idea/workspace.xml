@@ -4,7 +4,7 @@
     <projectFile>ConsoleApp1/ConsoleApp1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="972d2ee7-9d47-48f2-8f30-2c968721543b" name="Default Changelist" comment="Реализован System.Timers.Timer и запись в лог">
+    <list default="true" id="972d2ee7-9d47-48f2-8f30-2c968721543b" name="Default Changelist" comment="В лог теперь пишется время с точностью до миллисекунд">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net48/ConsoleApp1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/net48/ConsoleApp1.exe" afterDir="false" />
@@ -20,6 +20,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605188484455</updated>
-      <workItem from="1605188489515" duration="20846000" />
+      <workItem from="1605188489515" duration="29447000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1605193116686</created>
@@ -100,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605265657898</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="В лог теперь пишется время с точностью до миллисекунд">
+      <created>1605267319339</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605267319339</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +124,8 @@
     <MESSAGE value="Добавил класс, описывающий таймер, начал писать функцию ведения лога" />
     <MESSAGE value="Внес правки в класс, шаблон функции таймера и логгер." />
     <MESSAGE value="Реализован System.Timers.Timer и запись в лог" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализован System.Timers.Timer и запись в лог" />
+    <MESSAGE value="В лог теперь пишется время с точностью до миллисекунд" />
+    <option name="LAST_COMMIT_MESSAGE" value="В лог теперь пишется время с точностью до миллисекунд" />
   </component>
   <component name="WindowStateProjectService">
     <state x="822" y="441" width="314" height="207" key="Github.ShareDialog" timestamp="1605192735570">
@@ -125,22 +136,22 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="724" y="241" width="533" height="632" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1605192746843" />
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1605267010489">
+    <state width="1802" height="159" key="GridCell.Tab.0.bottom" timestamp="1605276392782">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605267010489" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1605267010489">
+    <state width="1802" height="159" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1605276392782" />
+    <state width="1802" height="159" key="GridCell.Tab.0.center" timestamp="1605276392781">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605267010489" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1605267010488">
+    <state width="1802" height="159" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1605276392781" />
+    <state width="1802" height="159" key="GridCell.Tab.0.left" timestamp="1605276392781">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605267010488" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1605267010489">
+    <state width="1802" height="159" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1605276392781" />
+    <state width="1802" height="159" key="GridCell.Tab.0.right" timestamp="1605276392782">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605267010489" />
+    <state width="1802" height="159" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605276392782" />
     <state width="1802" height="367" key="GridCell.Tab.1.bottom" timestamp="1605264206961">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -189,9 +200,9 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state width="1802" height="367" key="GridCell.Tab.3.right/72.27.1848.1053@72.27.1848.1053" timestamp="1605264206965" />
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605265665437">
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1605267330385">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1605265665437" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1605267330385" />
   </component>
 </project>
