@@ -24,18 +24,15 @@ namespace ConsoleApp1
             int timeInSec = 0;
             Console.WriteLine("Введите количество секунд!");
             timeInSec = Int32.Parse(Console.ReadLine()) * 1000;
+            //Console.WriteLine("The application started at {0:HH:mm:ss.fff}", DateTime.Now);
+            //System_Timers_Timer(timeInSec);
+            //System_Threading_Timer(timeInSec);
             Console.WriteLine("The application started at {0:HH:mm:ss.fff}", DateTime.Now);
-            System_Timers_Timer(timeInSec);
-            Console.WriteLine("The application started at {0:HH:mm:ss.fff}", DateTime.Now);
-            System_Threading_Timer(timeInSec);
-            /*
             Thread t1 = new Thread(System_Timers_Timer);
             t1.Name = "System_Timers_Timer";
             t1.Start(timeInSec);
-            Console.WriteLine("\nPress the Enter key to exit the application...\n");
+            
             Console.WriteLine("The application started at {0:HH:mm:ss.fff}", DateTime.Now);
-            
-            
             Thread t2 = new Thread(System_Threading_Timer);
             t2.Name = "System_Threading_Timer";
             t2.Start(timeInSec);
