@@ -25,19 +25,22 @@ namespace ConsoleApp1
             t1.Start(timeInSec);
             Console.WriteLine("\nPress the Enter key to exit the application...\n");
             Console.WriteLine("The application started at {0:HH:mm:ss.fff}", DateTime.Now);
-            Console.Read();
+            
             /*
             Thread t2 = new Thread(System_Threading_Timer);
             t2.Name = "System_Threading_Timer";
             t2.Start(timeInSec);
+            /*
             Thread t3 = new Thread(System_Windows_Forms_Timer);
             t3.Name = "System_Windows_Forms_Timer";
             t3.Start(timeInSec);
+            /*
             Thread t4 = new Thread(System_Windows_Threading_DispatcherTimer);
             t4.Name = "System_Windows_Threading_DispatcherTimer";
             t4.Start(timeInSec);
-            Console.Read();
             */
+            Console.Read();
+            
         }
 
         static async void Logging(TimerInfo info)
@@ -45,13 +48,12 @@ namespace ConsoleApp1
             //string writePath = "" + Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/log.txt";
             //@"C:\SomeDir\log.txt";
             string writePath = "/home/vladdden/RiderProjects/ConsoleApp1/ConsoleApp1/log.txt";
-            string t1 = $"{info.start}: Таймер {info.name} запустился ({info.startTicks})";
-            string t2 = $"{info.stop}: Таймер {info.name} завершился ({info.stopTicks})";
+            string t1 = $"{info.start:HH:mm:ss.fff} Таймер {info.name} запустился ({info.startTicks})";
+            string t2 = $"{info.stop:HH:mm:ss.fff} Таймер {info.name} завершился ({info.stopTicks})";
             string t3 = $"Время выполнения таймера {info.name} - {info.start - info.stop}({info.difference})";
             string t4 = $"Во время выполнения таймера {info.name} была обнаружена ошибка - {info.timerException}";
             string t5 = "--------------------------------------------------------------------------------------------";
-            
-                try
+            try
             {
                 using (StreamWriter sw = new StreamWriter(writePath, false, System.Text.Encoding.Default))
                 {
